@@ -1,0 +1,34 @@
+{
+  "name": "blueprint-design-kit-demo",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueprint-design-kit/blueprint-design-kit-demo.git"
+  },
+  "type": "module",
+  "scripts": {
+    "time": "time (npm run bp && npm run bp && npm run bp)",
+    "bp": "blueprint build && echo 'Done'",
+    "dev": "blueprint dev & next dev",
+    "next": "rm -rf .next && next dev",
+    "build": "blueprint build && next build",
+    "start": "next start",
+    "test": "blueprint test --serverCommand='npm run dev' && echo 'Done and Passing'",
+    "test:ci": "blueprint test && echo 'Done and Passing'",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "blueprint-design-kit": "^0.5.0",
+    "next": "^16.2.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.2"
+  }
+}
