@@ -28,7 +28,7 @@ export default async function Home({ params }) {
                 <p>
                     Navigate to /blueprint or click here to see this app&apos;s
                     <br />
-                    <Link href={`${locale}/blueprint`} style={{ color: "#c7dbe4" }} prefetch={false}>
+                    <Link href={`${locale}/blueprint`} style={{ color: "#c7dbe4" }}>
                         Gallery of UI Components &raquo;
                     </Link>
                 </p>
@@ -48,11 +48,12 @@ export default async function Home({ params }) {
                         href="https://github.com/blueprint-design-kit/blueprint-design-kit"
                         style={{ color: "#438cc0" }}
                         prefetch={false}
+                        target="_blank"
                     >
                         Blueprint Design Kit
                     </Link>
                     &nbsp;
-                    <Link href="https://github.com/blueprint-design-kit/blueprint-design-kit" prefetch={false}>
+                    <Link href="https://github.com/blueprint-design-kit/blueprint-design-kit" target="_blank" prefetch={false}>
                         <Image
                             src="/blueprint-logo.png"
                             alt="Blueprint Logo"
