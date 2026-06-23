@@ -2,6 +2,7 @@ import "./global.css";
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 import { LocaleProvider } from "./contexts/LocaleContext";
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
     title: "Demo | Blueprint",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
                         {children}
                     </DarkModeProvider>
                 </LocaleProvider>
+                <Analytics />
             </body>
         </html>
     );
